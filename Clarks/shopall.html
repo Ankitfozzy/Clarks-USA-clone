@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clark's Men Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px 20px;
+        margin-top: 2%;
+      }
+      #filDiv {
+        display: flex;
+        justify-content: space-around;
+        text-align: justify;
+      }
+      #main img {
+        width: 100%;
+      }
+      .card {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 20px;
+      }
+      .card button {
+        width: 25%;
+        height: 25px;
+        background-color: teal;
+      }
+      .box8 {
+        margin-top: 2%;
+      }
+      #filter {
+        width: 12%;
+        font-size: 20px;
+        text-align: center;
+      }
+      #sort {
+        width: 12%;
+        font-size: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="first">
+        <button>
+          <h3>SAVE UP TO</h3>
+          <h1>50% OFF CLEARANCE*</h1>
+          <h3>USE CODE: EXTRAA</h3>
+        </button>
+      </div>
+      <div class="second">
+        <div>
+          <button onclick="window.location.href='admin-login.html';">
+            Admin Login
+          </button>
+        </div>
+        <div>
+          <button>Track Order</button>
+          <button>Store Locator</button>
+          <button onclick="window.location.href='login.html';">
+            Log in/Register
+          </button>
+        </div>
+      </div>
+      <div class="third">
+        <div>
+          <button onclick="window.location.href='index.html';">
+            <img
+              style="max-width: 70px"
+              src="https://1000logos.net/wp-content/uploads/2021/05/Clarks-logo.png"
+              alt="Error"
+            />
+          </button>
+          <button onclick="window.location.href='women.html';">Women</button>
+          <button onclick="window.location.href='men.html';">Men</button>
+          <button>Kids</button>
+          <button>Originals</button>
+          <button>Accessories</button>
+          <button>Sale</button>
+          <button>Sustainability</button>
+        </div>
+        <div>
+          <button>
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/002/272/237/original/search-icon-simple-free-illustration-free-vector.jpg"
+              alt="Error"
+            />
+          </button>
+          <button onclick="window.location.href='cart.html';">
+            <img
+              style="max-width: 60px"
+              src="https://static.vecteezy.com/system/resources/thumbnails/004/798/846/small/shopping-cart-logo-or-icon-design-vector.jpg"
+              alt="Error"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div class="fourth">
+        <p>FREE SHIPPING ON ORDERS OVER $75 | FREE RETURNS EVERYDAY</p>
+      </div>
+    </nav>
+
+    <div id="main"></div>
+
+    <div class="box8">
+      <div>
+        <h3>DEPARTMENTS</h3>
+        <button>Womens</button>
+        <button>Mens</button>
+        <button>Originals</button>
+        <button>Discover</button>
+        <button>Sale</button>
+      </div>
+      <div>
+        <h3>HELP</h3>
+        <button>Product Recall</button>
+        <button>Costumer Service</button>
+        <button>Shipping & Delivery</button>
+        <button>Order Lookup</button>
+        <button>Return</button>
+        <button>FAQs</button>
+      </div>
+      <div>
+        <h3>ABOUT CLARKS</h3>
+        <button>About Us</button>
+        <button>Accessibility</button>
+        <button>Affiliate Program</button>
+        <button>Blogs</button>
+        <button>Career</button>
+      </div>
+      <div>
+        <h3>CLARKSUS.COM</h3>
+        <button>Gift Cards</button>
+        <button>Gift Card Balance</button>
+        <button>Size Guide</button>
+      </div>
+      <div>
+        <img
+          src="https://t3.ftcdn.net/jpg/03/22/90/44/360_F_322904485_DjssNNwupJCksUae1TX7S2ouapmjdpsg.jpg"
+          alt="Error"
+        />
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div>
+        <button>Terms & Condition</button>
+        <button>Privacy Policies</button>
+        <button>CCPA Privacy Policies</button>
+      </div>
+      <div>
+        <p>
+          © C. & J. Clark International 2022. Clarks and the Clarks logo are
+          registered trademarks of C. & J. Clark International Limited.
+        </p>
+        <p>C&J Clark America, Inc., 140 Kendrick Street, Needham, MA 02494</p>
+        <div>
+          <img
+            src="https://s7g10.scene7.com/is/content/Pangaea2Build/abCFooterPaypalb?hei=70"
+            alt="Error"
+          />
+          <img
+            src="https://s7g10.scene7.com/is/content/Pangaea2Build/adFooterVisa2020?hei=70"
+            alt="Error"
+          />
+          <img
+            src="https://s7g10.scene7.com/is/content/Pangaea2Build/abCFooterMastercardv2?hei=70"
+            alt="Error"
+          />
+          <img
+            src="https://s7g10.scene7.com/is/content/Pangaea2Build/adFooterDiscoverCard2020b?hei=70"
+            alt="Error"
+          />
+          <img
+            src="https://s7g10.scene7.com/is/content/Pangaea2Build/adFooterAmericanExpress2020b?hei=70"
+            alt="Error"
+          />
+          <img
+            src="https://clarks.scene7.com/is/content/Pangaea2Build/IC_klarnaLogo"
+            alt="Error"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    let productData = [
+      {
+        name: "Un Loop Top Tan",
+        Product_description:
+          "Too many casual boots? We don’t believe it’s possible. In warm dark tan leather, the Un Loop Top flat boot blends classic styling with soft underfoot cushioning and breathable lining, offering a trusty style to keep toes toasty through any weekend adventure.",
+        price: "109.99",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26168666_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "boot",
+        gender: "female",
+        quantity: 1,
+      },
+      {
+        name: "Breeze Glacier Black Textile",
+        Product_description:
+          "Introducing Breeze Glacier, our new season ankle boot made for every outdoor adventure. Cozy faux-fur linings, soft cushioning and a grippy sole bring comfort and confidence to every step - no matter the elements. With flexible black and grey textile uppers and handy lacing, this sports-inspired boot is easy to pop on and off.",
+        price: "79.99",
+        image:
+          " https://clarks.scene7.com/is/image/Pangaea2Build/26168952_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "boot",
+        gender: "female",
+        quantity: 1,
+      },
+      {
+        name: "Breeze Glacier Grey Combination",
+        Product_description:
+          "Introducing Breeze Glacier, our new season ankle boot made for every outdoor adventure. Cozy faux-fur linings, soft cushioning and a grippy sole bring comfort and confidence to every step - no matter the elements. With flexible black and grey textile uppers and handy lacing, this sports-inspired boot is easy to pop on and off.",
+        price: "69.99",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26168887_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "boot",
+        gender: "female",
+        quantity: 1,
+      },
+      {
+        name: "Clarkwell Mid Black Warmlined Leather",
+        Product_description:
+          "With a classic flat silhouette and comfort features aplenty, Clarkwell Mid is your go-to everyday boot for the colder seasons. A faux shearling lining adds warmth on chillier days, and buckle straps give a riding-inspired twist. Its mid-height profile makes for extra versatile styling – team with trusty jeans or sweater dresses for a chic everyday ensemble.",
+        price: "114.99",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26168590_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "boot",
+        gender: "female",
+        quantity: 1,
+      },
+      {
+        name: "Rockie 2 HI GORE-TEX Brown Nubuck",
+        Product_description:
+          "A casual commuter boot in premium brown nubuck, Rockie 2 Hi GTX teams a Contoured Comfort™ footbed with protection against the elements in a profile that can comfortably step into the office. With a breathable waterproof GORE-TEX® lining and rubber sole to give traction, this premium lace-up is an outdoor winter essential.",
+        price: "149.99",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26161217_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "boot",
+        gender: "female",
+        quantity: 1,
+      },
+      {
+        name: "Grove Zip II Dark Tan Leather",
+        Product_description:
+          "Stay confident with the comfort and style of the Grove Zip hiking boot. With a stabilizing, structured design that supports trail walking, this boot helps you stay on your feet with a traction outsole and Extreme Comfort footbed that's breathable and moisture-wicking. A molded heel cup surrounds the foot.",
+        price: "109.99",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26151674_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "boot",
+        gender: "female",
+        quantity: 1,
+      },
+      {
+        name: "Cora Rae Dark Tan Leather",
+        Product_description:
+          "Our Cora Rae boot elevates your everyday look in premium style - with heaps of comfort. In rich dark tan leather, its moulded footbed delivers lasting cushioning, while a lightweight sole makes every step light and airy. With a handy zip closure and stretch panels, it’s easy to pop on and off whether you’re running errands or staying home.",
+        price: "109.99",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26167757_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "boot",
+        gender: "female",
+        quantity: 1,
+      },
+      {
+        name: "Dash Lite Jazz Ivory Combi",
+        Product_description:
+          "Retro jogger silhouettes inspire our new sleek and sporty sneaker DashLite Jazz. Your every step feels fresh and feather-light, thanks to our unique MI-X EVA midsole and breathable cushioning – finished with a durable rubber sole for an athleisure trainer that’s a vibrant and energetic addition to your collection.",
+        price: "110.99",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26170429_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "sneakers",
+        gender: "female",
+        quantity: 1,
+      },
+      {
+        name: "Dash Lite Jazz Lilac Combi",
+        Product_description:
+          "Retro jogger silhouettes inspire our new sleek and sporty sneaker DashLite Jazz. Your every step feels fresh and feather-light, thanks to our unique MI-X EVA midsole and breathable cushioning – finished with a durable rubber sole for an athleisure trainer that’s a vibrant and energetic addition to your collection.",
+        price: "110.00",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26170431_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "sneakers",
+        gender: "female",
+        quantity: 1,
+      },
+      {
+        name: "Dash Lite Jazz Navy Combination",
+        Product_description:
+          "Retro jogger silhouettes inspire our new sleek and sporty sneaker DashLite Jazz. Your every step feels fresh and feather-light, thanks to our unique MI-X EVA midsole and breathable cushioning – finished with a durable rubber sole for an athleisure trainer that’s a vibrant and energetic addition to your collection.",
+        price: "79.99",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26169052_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "sneakers",
+        gender: "female",
+        quantity: 1,
+      },
+      {
+        name: "ATL Trek Knit Waterproof Off White Text",
+        Product_description:
+          "Our Cora Rae boot elevates your everyday look in premium style - with heaps of comfort. In rich dark tan leather, its moulded footbed delivers lasting cushioning, while a lightweight sole makes every step light and airy. With a handy zip closure and stretch panels, it’s easy to pop on and off whether you’re running errands or staying home.",
+        price: "109.99",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26170573_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "sneakers",
+        gender: "female",
+        quantity: 1,
+      },
+      {
+        name: "Breacon Dark Green",
+        Product_description:
+          "Kith founder Ronnie Fieg joins forces with Clarks Originals for another addition to the 8th St collection. With a trail runner aesthetic inspired by Breacon national park, vintage-style sneaker Breacon combines dark green suede with a natural pebble crepe sole. A micro-perforated vamp enhances this sneaker’s heritage athletic aesthetic",
+        price: "230.00",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26168855_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "sneakers",
+        gender: "female",
+        quantity: 1,
+      },
+      {
+        name: "Un Rio Knit Turquoise knit",
+        Product_description:
+          "With all the comfort of a sneaker but breathability of a sandal, Un Rio Knit is ideal for days on the move as the weather warms up. A high-rebound EVA midsole makes sure you feel light on your feet, and the rubber sole guarantees total traction. Its airy slip-on styling comes to the rescue on those busy days when there’s no time for laces.",
+        price: "69.99",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26166309_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "sneakers",
+        gender: "female",
+        quantity: 1,
+      },
+      {
+        name: "BREEZE SEA Bright Pink Syn",
+        Product_description:
+          "Make choosing the perfect flip-flop a breeze. These bright pink sandals offer a classic shape with intricate modern detailing, like an oh-so-subtle strap closure. Lightweight is key when beach-strolling and the sole construction feels like the next best thing to barefoot this summer.",
+        price: "55.99",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26158709_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "flip flops",
+        gender: "female",
+        quantity: 1,
+      },
+      {
+        name: "Brynn Madi Leopard Print",
+        Product_description:
+          "Make a statement in leopard print leather sandal Brynn Madi. This striking summer-ready profile is boosted with our Ultimate Comfort pillowtop footbed, together with a flexible, light and grippy sole for easy all-day wear. An adjustable buckle adds confidence and a custom fit to this outfit-enhancing toe-post style. Note : This item runs small, we suggest ordering 1 size larger than your preferred size.",
+        price: "34.99",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26166428_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "flip flops",
+        gender: "female",
+        quantity: 1,
+      },
+      {
+        name: "Eliza Shore Blue",
+        Product_description:
+          "Enjoy summer soirees and beachy days in fresh and fun blue canvas slide sandal Eliza Shore. Feet feel light as a cloud all day long, thanks to super-soft EVA cushioning.",
+        price: "39.99",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26165395_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "flip flops",
+        gender: "female",
+        quantity: 1,
+      },
+      {
+        name: "Drift Ave Dark Navy",
+        Product_description:
+          "Comfort is key, especially when it comes to summer – and toe-post slide sandal Drift Ave is your new elevated essential. The dark navy upper feels soft against skin, and underfoot, a sumptuous cushioned footbed and lightweight EVA midsole make every step feel light as air. Machine washable, it’s ideal for everyday wear as temperatures rise.",
+        price: "69.99",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26165087_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "flip flops",
+        gender: "female",
+        quantity: 1,
+      },
+      {
+        name: "Drift Ave Multicolour",
+        Product_description:
+          "Light as a cloud and super-stylish, our new summer sandal Drift Ave is prepped for sunny skies. Crafted with soft, breathable textile uppers in refreshed colorways, our soft EVA footbed brings an extra bounce to your step, while a grippy tread keeps you steady on your feet - from desk to day trips.",
+        price: "65.00",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26171393_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "flip flops",
+        gender: "female",
+        quantity: 1,
+      },
+      {
+        name: "Desert Boot  Drk Green Hairy",
+        Product_description:
+          "Flannel-like suede from Stead’s tannery gives our iconic Desert Boot a textural update. Its stonewash effect complements rich, autumnal hues of rich forest green – with a tonal midsole and matching painted crepe sole for a sleek silhouette.",
+        price: "74.99",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26168535_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "boot",
+        gender: "male",
+        quantity: 1,
+      },
+      {
+        name: "Lockhill Grey Suede",
+        Product_description:
+          "Kith founder Ronnie Fieg joins forces with Clarks Originals for another season. Part of the 8th St collection and inspired by the energy of New York City’s 1990s shoe scene, heritage athletic sneaker Lockhill is named after one of Clarks’ very first factories. Crafted from top-grade perforated suede in a new grey colourway, extra perforations on the heel padding enhance its retro aesthetic.",
+        price: "104.99",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26166898_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "sneakers",
+        gender: "male",
+        quantity: 1,
+      },
+      {
+        name: "Grove Zip II Black Leather",
+        Product_description:
+          "Stay confident with the comfort and style of the Grove Zip hiking boot. With a stabilizing, structured design that supports trail walking, this boot helps you stay on your feet with a traction outsole and Extreme Comfort footbed that's breathable and moisture-wicking. A molded heel cup surrounds the foot.",
+        price: "65.99",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26163588_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "boot",
+        gender: "male",
+        quantity: 1,
+      },
+      {
+        name: "Morris Up Black Tumbled",
+        Product_description:
+          "This functional chelsea boot is made for everyday wear. Made of soft leather uppers for ultimate comfort, the waterproof feature is sure to keep you comfortable even in inclimate weather.",
+        price: "65.99",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26162952_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "boot",
+        gender: "male",
+        quantity: 1,
+      },
+      {
+        name: "Wallabee GORE-TEX Black Suede",
+        Product_description:
+          "Our Wallabee GTX in black suede is an iconic profile that’s fully prepped for the outdoors. A chunky, cleated Vibram® sole gives durable wear and a rugged aesthetic, together with webbing tape and GORE-TEX® technology for protection against the elements. A woven GORE-TEX® label and embossed fob branding add style appeal.",
+        price: "113.99",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26149449_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "boot",
+        gender: "male",
+        quantity: 1,
+      },
+      {
+        name: "Clarkdale Hall Beeswax Leather",
+        Product_description:
+          "A classic Chelsea boot finished in premium beeswax leather, Clarkdale Hall is a celebration of traditional Clarks shoemaking. The handy ankle loop is ideal for life on-the-go, and a layered sole adds to the crafted aesthetic. The targeted Cushion Plus™ footbed and padded topline offer complete comfort all day, too.",
+        price: "134.99",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26163069_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "boot",
+        gender: "male",
+        quantity: 1,
+      },
+      {
+        name: "Nature X One Grey Combination",
+        Product_description:
+          "The ultimate casual sports hybrid, Nature X One is packed with performance materials and next-gen technology. Brand new biomechanically innovative soles compress at the heel and flex with your feet as they move, combining with targeted cushioning and a flexible construction to absorb shock and move freely. Using our iconic Tor sports silhouette, it’s a true embodiment of our heritage and technological vision.",
+        price: "130.00",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26171979_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "sneakers",
+        gender: "male",
+        quantity: 1,
+      },
+      {
+        name: "Nature X One White Leather",
+        Product_description:
+          "The ultimate casual sports hybrid, Nature X One is packed with performance materials and next-gen technology. Brand new biomechanically innovative soles compress at the heel and flex with your feet as they move, combining with targeted cushioning and a flexible construction to absorb shock and move freely. Using our iconic Tor sports silhouette, it’s a true embodiment of our heritage and technological vision.",
+        price: "130.00",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26171924_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "sneakers",
+        gender: "male",
+        quantity: 1,
+      },
+      {
+        name: "ATL Trek Walk Waterproof Navy Multi",
+        Product_description:
+          "Experience the freedom of the great outdoors in a high-performance shoe that’s made for exploration. Inspired by our iconic Desert Khan, waterproof ATL Trek Walk combines authentic craft with innovative technology to enhance every move – from targeted, removable underfoot cushioning to expertly engineered Rock™ rubber soles. Recycled materials, including sustainable sugarcane, minimise this shoe’s environmental footprint.",
+        price: "140.00",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26170149_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "sneakers",
+        gender: "male",
+        quantity: 1,
+      },
+      {
+        name: "ATL Trek Walk Waterproof Brown",
+        Product_description:
+          "Experience the freedom of the great outdoors in a high-performance shoe that’s made for exploration. Inspired by our iconic Desert Khan, waterproof ATL Trek Walk combines authentic craft with innovative technology to enhance every move – from targeted, removable underfoot cushioning to expertly engineered Rock™ rubber soles. Recycled materials, including sustainable sugarcane, minimise this shoe’s environmental footprint.",
+        price: "150.00",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26170148_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "sneakers",
+        gender: "male",
+        quantity: 1,
+      },
+      {
+        name: "Wesley Post Black",
+        Product_description:
+          "Relaxing by the pool or getting active, sporty black flip flop Wesley Post is ideal for easy, athletic-inspired summer wear. Enjoy ultimate comfort and confidence, thanks to cushioning underfoot that’s specifically shaped to fit feet naturally, and a lightweight layered sole with trail-inspired treading.",
+        price: "70.00",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26164871_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "flip flops",
+        gender: "male",
+        quantity: 1,
+      },
+      {
+        name: "Nature Trek Mahogany Combi",
+        Product_description:
+          "With iconic styling that taps into Clarks heritage, Nature Trek is a wraparound sandal that adjusts across the foot for full comfort. The leather-lined upper in premium mahogany combi leathers sits on an ergonomic footbed that gives stability. The grippy rubber sole features recycled content and a lifetime of depth of comfort.",
+        price: "36.70",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26159194_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "flip flops",
+        gender: "male",
+        quantity: 1,
+      },
+      {
+        name: "Nature Trek Tan Combi",
+        Product_description:
+          "With iconic styling that taps into an essential Clarks heritage, Nature Trek is a wraparound sandal that adjusts across the foot for full comfort. The leather-lined upper in premium tan combi leathers sits on an ergonomic footbed that gives stability. The grippy rubber sole features recycled content and a lifetime of depth of comfort.",
+        price: "39.99",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26159193_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "flip flops",
+        gender: "male",
+        quantity: 1,
+      },
+      {
+        name: "Wesley Post Tan",
+        Product_description:
+          "Relaxing by the pool or getting active, sporty tan flip flop Wesley Post ideal for easy, athletic-inspired summer wear. Enjoy ultimate comfort and confidence, thanks to cushioning underfoot that’s specifically shaped to fit feet naturally, and a lightweight layered sole with trail-inspired treading",
+        price: "69.99",
+        image:
+          "https://clarks.scene7.com/is/image/Pangaea2Build/26164873_W_1?wid=2000&hei=2000&fmt=jpg",
+        Category: "flip flops",
+        gender: "male",
+        quantity: 1,
+      },
+    ];
+
+    display(productData);
+
+    let cartData = JSON.parse(localStorage.getItem("cartData")) || [];
+
+    function display(data) {
+      let container = document.getElementById("main");
+      container.innerHTML = null;
+      data.forEach((element) => {
+          let card = document.createElement("div");
+          card.setAttribute("class", "card");
+
+          let image = document.createElement("img");
+          image.setAttribute("src", element.image);
+
+          let title = document.createElement("h1");
+          title.innerText = element.name;
+
+          let Category = document.createElement("h5");
+          Category.innerText = element.Category;
+
+          let desc = document.createElement("p");
+          desc.innerText = element.Product_description;
+
+          let price = document.createElement("h4");
+          price.innerText = +element.price;
+
+          let buy = document.createElement("button");
+          buy.setAttribute("class", "Buy");
+          buy.innerText = "Add to Cart";
+
+          buy.addEventListener("click", () => {
+            cartData.push(element);
+            localStorage.setItem("cartData", JSON.stringify(cartData));
+            alert("Product Added to the Cart");
+          });
+
+          card.append(image, title, desc, Category, price, buy);
+          container.append(card);
+      });
+    }
+
+
+
+    
+</script>
+</html>
