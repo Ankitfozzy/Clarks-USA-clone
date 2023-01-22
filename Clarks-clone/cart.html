@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clarks Cart</title>
+    <style>
+      .box8 {
+        margin-top: 2%;
+      }
+      #header {
+        display: flex;
+        justify-content: space-around;
+      }
+      #header button {
+        width: 15%;
+        height: 35px;
+        margin-top: 2%;
+      }
+      #cart {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        background-color: aliceblue;
+      }
+      #itemlist {
+        width: 60%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 20px;
+        padding: 10px;
+        text-align: left;
+      }
+      #itemlist button {
+        width: auto;
+        padding: 8px;
+      }
+      #checkout {
+        width: 40%;
+        height: auto;
+        margin-top: 2%;
+        margin-top: 10%;
+        padding: 25px;
+      }
+      .itemDetails img {
+        width: 50%;
+      }
+      #header button {
+        background-color: teal;
+      }
+      #total {
+        border: 2px solid black;
+        padding: 10px;
+        text-align: center;
+      }
+      #Coupon,
+      #Couponbtn {
+        width: 75%;
+        height: 40px;
+        display: block;
+        margin: auto;
+      }
+      #paybtn {
+        width: 50%;
+        height: 40px;
+        background-color: teal;
+        display: block;
+        margin: auto;
+      }
+      #paybtn:hover {
+        cursor: pointer;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="first">
+        <button>
+          <h3>SAVE UP TO</h3>
+          <h1>50% OFF CLEARANCE*</h1>
+          <h3>USE CODE: EXTRAA</h3>
+        </button>
+      </div>
+      <!-- <div class="second">
+        <div>
+          <button onclick="window.location.href='admin-login.html';">
+            Admin Login
+          </button>
+        </div>
+        <div>
+          <button>Track Order</button>
+          <button>Store Locator</button>
+          <button onclick="window.location.href='login.html';">
+            Log in/Register
+          </button>
+        </div>
+      </div> -->
+      <div class="third">
+        <div>
+          <button onclick="window.location.href='index.html';">
+            <img
+              style="max-width: 70px"
+              src="https://1000logos.net/wp-content/uploads/2021/05/Clarks-logo.png"
+              alt="Error"
+            />
+          </button>
+          <button onclick="window.location.href='women.html';">Women</button>
+          <button onclick="window.location.href='men.html';">Men</button>
+          <button>Kids</button>
+          <button>Originals</button>
+          <button>Accessories</button>
+          <button>Sale</button>
+          <button>Sustainability</button>
+        </div>
+        <div>
+          <button>
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/002/272/237/original/search-icon-simple-free-illustration-free-vector.jpg"
+              alt="Error"
+            />
+          </button>
+          <button onclick="window.location.href='cart.html';">
+            <img
+              style="max-width: 60px"
+              src="https://static.vecteezy.com/system/resources/thumbnails/004/798/846/small/shopping-cart-logo-or-icon-design-vector.jpg"
+              alt="Error"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div class="fourth">
+        <p>FREE SHIPPING ON ORDERS OVER $75 | FREE RETURNS EVERYDAY</p>
+      </div>
+    </nav>
+    <div id="header">
+      <h1>Your Cart</h1>
+      <button onclick="window.location.href='index.html';">
+        Continue Shopping...
+      </button>
+    </div>
+
+    <div id="cart">
+      <div id="itemlist"></div>
+      <div id="checkout">
+        <input
+          type="text"
+          placeholder="Apply Coupon"
+          name="Coupon"
+          id="Coupon"
+        />
+        <button id="Couponbtn">Apply</button>
+        <h1 id="total">Total cart Price:- <span id="cart-total">0</span></h1>
+        <h1 id="total">Total Payable Amount:- <span id="carttotal">0</span></h1>
+        <button id="paybtn" onclick="window.location.href='payment.html';">Proceed To Payment=></button>
+      </div>
+    </div>
+    <div class="box8">
+      <div>
+        <h3>DEPARTMENTS</h3>
+        <button onclick="window.location.href='women.html';">Womens</button>
+        <button onclick="window.location.href='men.html';">Mens</button>
+        <button>Originals</button>
+        <button>Discover</button>
+        <button>Sale</button>
+      </div>
+      <div>
+        <h3>HELP</h3>
+        <button>Product Recall</button>
+        <button>Costumer Service</button>
+        <button>Shipping & Delivery</button>
+        <button>Order Lookup</button>
+        <button>Return</button>
+        <button>FAQs</button>
+      </div>
+      <div>
+        <h3>ABOUT CLARKS</h3>
+        <button>About Us</button>
+        <button>Accessibility</button>
+        <button>Affiliate Program</button>
+        <button>Blogs</button>
+        <button>Career</button>
+      </div>
+      <div>
+        <h3>CLARKSUS.COM</h3>
+        <button>Gift Cards</button>
+        <button>Gift Card Balance</button>
+        <button>Size Guide</button>
+      </div>
+      <div>
+        <img
+          src="https://t3.ftcdn.net/jpg/03/22/90/44/360_F_322904485_DjssNNwupJCksUae1TX7S2ouapmjdpsg.jpg"
+          alt="Error"
+        />
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div>
+        <button>Terms & Condition</button>
+        <button>Privacy Policies</button>
+        <button>CCPA Privacy Policies</button>
+      </div>
+      <div>
+        <p>
+          © C. & J. Clark International 2022. Clarks and the Clarks logo are
+          registered trademarks of C. & J. Clark International Limited.
+        </p>
+        <p>C&J Clark America, Inc., 140 Kendrick Street, Needham, MA 02494</p>
+        <div>
+          <img
+            src="https://s7g10.scene7.com/is/content/Pangaea2Build/abCFooterPaypalb?hei=70"
+            alt="Error"
+          />
+          <img
+            src="https://s7g10.scene7.com/is/content/Pangaea2Build/adFooterVisa2020?hei=70"
+            alt="Error"
+          />
+          <img
+            src="https://s7g10.scene7.com/is/content/Pangaea2Build/abCFooterMastercardv2?hei=70"
+            alt="Error"
+          />
+          <img
+            src="https://s7g10.scene7.com/is/content/Pangaea2Build/adFooterDiscoverCard2020b?hei=70"
+            alt="Error"
+          />
+          <img
+            src="https://s7g10.scene7.com/is/content/Pangaea2Build/adFooterAmericanExpress2020b?hei=70"
+            alt="Error"
+          />
+          <img
+            src="https://clarks.scene7.com/is/content/Pangaea2Build/IC_klarnaLogo"
+            alt="Error"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    let cartData = JSON.parse(localStorage.getItem("cartData")) || [];
+
+    let itemList = document.getElementById("itemlist");
+    var sum = 0;
+    var Sum = 0;
+    let payable = document.getElementById("carttotal");
+
+    DisplayProduct(cartData);
+
+    function DisplayProduct(cartData) {
+      let total = document.getElementById("cart-total");
+      itemList.innerHTML = null;
+      cartData.forEach((element) => {
+        let parent = document.createElement("div");
+        parent.setAttribute("class", "parent");
+        let itemDetails = document.createElement("div");
+        itemDetails.setAttribute("class", "itemDetails");
+        let quantityDetails = document.createElement("div");
+        quantityDetails.setAttribute("class", "quantityDetails");
+        let priceDetails = document.createElement("div");
+        priceDetails.setAttribute("class", "priceDetails");
+
+        let image = document.createElement("img");
+        image.src = element.image;
+
+        let title = document.createElement("h2");
+        title.innerText = element.name;
+
+        let price = document.createElement("h4");
+        price.innerText = "$"+element.price;
+
+        let Remove = document.createElement("button");
+        let Increment = document.createElement("button");
+        let quantity = document.createElement("span");
+        let Decrement = document.createElement("button");
+        quantity.textContent = element.quantity;
+        Remove.textContent = "Remove";
+        Increment.textContent = "+";
+        Decrement.textContent = "-";
+
+        Remove.addEventListener("click", () => {
+          cartData = cartData.filter((ele) => {
+            return ele.name !== element.name;
+          });
+          localStorage.setItem("cartData", JSON.stringify(cartData));
+          DisplayProduct(cartData);
+        });
+        Increment.addEventListener("click", () => {
+          element = element.quantity++;
+          localStorage.setItem("cartData", JSON.stringify(cartData));
+          DisplayProduct(cartData);
+        });
+        Decrement.addEventListener("click", () => {
+          if (element.quantity > 1) {
+            element.innerText = element.quantity--;
+            localStorage.setItem("cartData", JSON.stringify(cartData));
+            DisplayProduct(cartData);
+          }
+        });
+
+        itemDetails.append(image, title, price);
+        quantityDetails.append(Increment, quantity, Decrement, Remove);
+        parent.append(itemDetails, quantityDetails);
+        itemList.append(parent);
+        sum = 0;
+        for (let i = 0; i < cartData.length; i++) {
+          sum += cartData[i].price * cartData[i].quantity;
+        }
+        Sum = sum.toFixed(2);
+        total.textContent = "$"+Sum;
+        payable.innerText = "$"+Sum;
+      });
+    }
+
+    let couponCode = document.getElementById("Coupon");
+    let couponbtn = document.getElementById("Couponbtn");
+
+    couponbtn.addEventListener("click", () => {
+      if (couponCode.value == "EXTRAA") {
+        payable.innerText = "$"+(Sum - (Sum * 0.3).toFixed(2));
+      } else if (couponCode.value == "") {
+      } else {
+        alert("Enter a valid Coupon Code");
+      }
+    });
+  </script>
+</html>
