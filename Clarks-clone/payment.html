@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarks Payment</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            <div class="payment-box">
+                <h1 class="pay-h">Card Details</h1>
+    
+                <form class="form" action="no.php">
+                    <label for="Card Number">Card Number</label>
+    
+                    <input class="cc-number icon" minlength="16" maxlength="16" name="card-number" pattern="\d*" required placeholder="XXXX XXXX XXXX" type="tel">
+    
+                    <label for="Expiry Date">Expiry Date</label>
+                    <input class="expiry-month icon" type="tel" minlength="2" maxlength="2" name="expiry-month" pattern="\d*" required placeholder="01">
+                    <input class="expiry-year icon" type="tel" minlength="4" maxlength="4" name="expiry-year" pattern="\d*" required placeholder="0000">
+    
+                    <label for="CVV">CVV</label>
+                    <input class="cvv icon" type="tel" minlength="3" maxlength="3" name="cvv" pattern="\d*" required placeholder="XXX">
+    
+                    <input class="card-holder icon" type="text" placeholder="Cardholder Name">
+    
+                    <button class="pay-now" type="submit">
+                        <img src="https://bit.ly/3Q8KZcM" alt="" class="pay_icon">
+                        <span class="pay_text">Pay Now</span>
+                    </button>
+                    <button id="cancelPay" style="display: block;margin: auto;">Cancel</button>
+    
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    let paybtn = document.querySelector(".form");
+    let cancelbtn = document.getElementById("cancelPay");
+    paybtn.addEventListener("submit",()=>{
+        window.location.href='index.html';
+        alert("Payment Successful & Order is Placed");
+    });
+
+    cancelbtn.addEventListener("click",()=>{
+        window.location.href='cart.html';
+    })
+
+</script>
+</html>
